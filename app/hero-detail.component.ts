@@ -1,4 +1,19 @@
-/**
- * Created by s-b-a on 10.01.2017.
- */
+import { Component, Input } from '@angular/core';
 
+@Component({
+    selector: 'my-hero-detail',
+    template: `
+        <div *ngIf="Hero">
+            <h2>{{hero.name}} details!</h2>
+            <div><label>id: </label>{{hero.id}}</div>
+            <div>
+                <label>name: </label>
+                <input [(ngModel)]="hero.name" placeholder="name">
+            </div>
+        </div>
+        `
+})
+
+export class HeroDetailComponent {
+    //
+}
