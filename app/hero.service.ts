@@ -8,4 +8,7 @@ export class HeroService {
     getHeroes(): Promise<Hero[]> {
         return Promise.resolve(HEROES);
     }
+
+
+
 }
